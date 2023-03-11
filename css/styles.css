@@ -626,6 +626,31 @@ img {
   height: 8px;
 }
 
+.modal-title {
+  margin: 24px;
+
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.form-item {
+  margin-bottom: 8px;
+}
+
+.label-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-userform {
+  width: 340px;
+  height: 40px;
+}
+
 /* Portfolio */
 
 /* Works */
