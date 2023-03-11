@@ -638,17 +638,67 @@ img {
 }
 
 .form-item {
+  position: relative;
   margin-bottom: 8px;
 }
 
 .label-form {
   display: flex;
   flex-direction: column;
+
+  margin-left: 24px;
+  margin-right: 24px;
+
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.04em;
+  color: var(--border-color);
+}
+
+.form-icon {
+  position: absolute;
+  top: 65%;
+  left: 43px;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
 }
 
 .modal-userform {
-  width: 340px;
+  width: 360px;
   height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  opacity: 0.2;
+}
+
+.modal-userform:focus {
+  border: 1px solid var(--accent);
+}
+
+.form-textarea {
+  width: 360px;
+  height: 120px;
+}
+
+.form-textarea {
+  resize: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.form-textarea::placeholder {
+  padding-top: 8px;
+  padding-left: 16px;
+
+  color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  opacity: 1;
 }
 
 /* Portfolio */
