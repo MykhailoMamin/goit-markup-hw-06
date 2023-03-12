@@ -637,37 +637,17 @@ img {
   letter-spacing: 0.02em;
 }
 
+/* Form */
+
 .form-item {
   position: relative;
-  margin-bottom: 8px;
-}
 
-.label-form {
   display: flex;
   flex-direction: column;
-
-  margin-left: 24px;
-  margin-right: 24px;
-
-  font-size: 12px;
-  line-height: 1.16;
-
-  letter-spacing: 0.04em;
-  color: var(--border-color);
+  margin: 8px 24px;
 }
 
-.form-icon {
-  position: absolute;
-  top: 65%;
-  left: 43px;
-  transform: translateY(-50%);
-
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-}
-
-.modal-userform {
+.form-input {
   width: 360px;
   height: 40px;
   border-radius: 4px;
@@ -675,33 +655,43 @@ img {
   opacity: 0.2;
 }
 
-.modal-userform:focus {
-  border: 1px solid var(--accent);
-}
+/* .form-input:hover,
+.form-input:focus {
+  border-color: var(--accent);
+  opacity: 1;
+  outline: none;
+  fill: var(--accent);
+} */
 
-.form-textarea {
-  width: 360px;
-  height: 120px;
-}
-
-.form-textarea {
-  resize: none;
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-}
-
-.form-textarea::placeholder {
-  padding-top: 8px;
-  padding-left: 16px;
-
-  color: rgba(46, 47, 66, 0.4);
+.form-label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
-  opacity: 1;
+  color: var(--border-color);
 }
 
-/* Portfolio */
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+}
+
+.form-modal {
+  position: relative;
+}
+
+.form-modal:hover {
+  border-color: var(--accent);
+  opacity: 1;
+  outline: none;
+  fill: var(--accent);
+}
+
+/* ============= Portfolio ============*/
 
 /* Works */
 
