@@ -507,6 +507,7 @@ img {
 }
 
 .footer-title {
+  display: block;
   margin-bottom: 16px;
 
   color: var(--first-button-color);
@@ -558,6 +559,51 @@ img {
   background-color: var(--green-color);
 }
 
+/* Footer form */
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 165px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--deafult-white-color);
+  background: var(--span-accent);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+}
+
 /* Modal */
 .backdrop {
   position: fixed;
@@ -586,6 +632,7 @@ img {
 
   min-width: 408px;
   min-height: 576px;
+  padding: 72px 24px 24px 24px;
 
   background-color: #fff;
   border-radius: 4px;
@@ -599,14 +646,14 @@ img {
 }
 
 .button-icon {
+  position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
-
+  justify-content: center;
+  top: 24px;
+  right: 24px;
   height: 24px;
   width: 24px;
-  margin: 24px 24px auto auto;
-
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -627,7 +674,7 @@ img {
 }
 
 .modal-title {
-  margin: 24px;
+  margin-bottom: 16px;
 
   color: var(--primary-color);
   text-align: center;
@@ -638,10 +685,6 @@ img {
 }
 
 /* Form */
-
-.modal-form {
-  margin: 0 24px;
-}
 
 .form-item {
   display: flex;
@@ -739,9 +782,6 @@ img {
 }
 
 .check-label {
-  display: flex;
-  align-items: center;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -771,14 +811,7 @@ img {
 }
 
 .form-button {
-  width: 169px;
-  height: 56px;
-
-  color: #fff;
-  background: var(--accent);
-  border: transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  margin: 0 96px;
 }
 
 /* ============= Portfolio ============*/

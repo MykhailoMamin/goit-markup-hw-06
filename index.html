@@ -379,7 +379,7 @@
             </p>
           </div>
           <div class="footer-social">
-            <h2 class="footer-title">Social media</h2>
+            <p class="footer-title">Social media</p>
               <ul class="footer-list list">
                 <li class="footer-item">
                   <a class="footer-link" href="#">
@@ -412,12 +412,23 @@
                 </li>
               </ul>
           </div>
+          <div class="footer-form">
+            <p class="footer-title">Subscribe</p>
+            <form class="footer-form">
+              <input class="footer-input" type="email" name="email" placeholder="E-mail">
+              <button type="submit" class="footer-button">Subscribe
+                <svg class="icon-send">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </form>
+          </div>  
         </div>
       </div>
     </footer>
 
 
-
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
       <button data-modal-close class="button-icon" type="button">
@@ -462,10 +473,11 @@
            <label class="check-label">
             <input class="checkbox" type="checkbox">
             <span class="checkbox-icon"></span>
-              I accept the terms and conditions of the <span><a class="check-label link" href="#">Privacy Policy</a></span>
+            I accept the terms and conditions of the
+            <a class="check-label link" href="#">Privacy Policy</a>
           </label>
         </div>
-        <button class="form-button" type="submit">Send</button>
+        <button class="form-button hero-button" type="submit">Send</button>
       </form>
       </div>
     </div>
