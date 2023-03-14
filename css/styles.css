@@ -510,7 +510,7 @@ img {
   display: block;
   margin-bottom: 16px;
 
-  color: var(--first-button-color);
+  color: var(--deafult-white-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -561,6 +561,10 @@ img {
 
 /* Footer form */
 
+.form {
+  margin-left: 80px;
+}
+
 .footer-form {
   display: flex;
   gap: 24px;
@@ -568,16 +572,18 @@ img {
 }
 
 .footer-input {
+  padding: 8px 16px;
   width: 264px;
   height: 40px;
+
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  padding: 8px 16px;
 }
 
 .footer-button {
@@ -587,16 +593,24 @@ img {
   gap: 16px;
   width: 165px;
   height: 40px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   color: var(--deafult-white-color);
   background: var(--span-accent);
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
+
   transition: background-color 250ms var(--timing-function);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background: var(--accent);
 }
 
 .icon-send {
@@ -782,6 +796,8 @@ img {
 }
 
 .check-label {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
