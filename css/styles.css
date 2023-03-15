@@ -816,6 +816,7 @@ img {
 
 .link {
   color: var(--accent);
+  margin-left: 4px;
 }
 
 .checkbox-icon {
