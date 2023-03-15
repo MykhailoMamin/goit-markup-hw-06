@@ -511,6 +511,7 @@ img {
   margin-bottom: 16px;
 
   color: var(--deafult-white-color);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -619,6 +620,7 @@ img {
 }
 
 /* Modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -746,14 +748,23 @@ img {
   transition: fill 250ms var(--timing-function);
 }
 
+.big-icon {
+  width: 18px;
+  height: 24px;
+}
+
 .form-input:focus + .form-icon {
   fill: var(--accent);
 }
 
-.form-textarea {
+.textarea {
   margin-bottom: 16px;
+}
+
+.form-textarea {
   width: 360px;
   height: 120px;
+  padding: 8px 16px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -765,7 +776,6 @@ img {
 }
 
 .form-textarea::placeholder {
-  padding: 8px 16px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
